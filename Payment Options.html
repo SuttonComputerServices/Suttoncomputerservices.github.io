@@ -50,25 +50,25 @@
       </header>
 
 <!-- Page Content -->
-<section id="Windows OS" data-animate="bounceIn" class="contact-section contact">
-<div class="container">
-    <header class="text-center">
-    <H1 data-animate="fadeInDown" class="title"></H1>
-    </header>
-    <div  class="row services text-center">
+<section id="Paypal" data-animate="bounceIn" class="contact-section contact">
+  <div class="container">
+      <header class="text-center">
+      <H1 data-animate="fadeInDown" class="title">USD</H1>
+      </header>
+      <div  class="row services text-center">
+          <div data-animate="fadeInUp" class="col-lg-4">
+      <h3 class="heading mb-3 text-400"><a href="PayPal.html#" class="btn btn-outline-dark link-scroll">Paypal</a></h3>
+      <p class="text-left description"></p>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-4">
+      <h3 class="heading mb-3 text-400"><a href="PayPal.html#" class="btn btn-outline-dark link-scroll">Venmo</a></h3>
+      <p class="text-left description"></p>
+          </div>
         <div data-animate="fadeInUp" class="col-lg-4">
-    <h3 class="heading mb-3 text-400"></h3>
-    <p class="text-left description"></p>
-        </div>
-        <div data-animate="fadeInUp" class="col-lg-4">
-    <h3 class="heading mb-3 text-400"></h3>
-    <p class="text-left description"></p>
-        </div>
-        <div data-animate="fadeInUp" class="col-lg-4">
-    <h3 class="heading mb-3 text-400"></h3>
-    <p class="text-left description"></p>
-        </div>
-    </div>
+      <h3 class="heading mb-3 text-400"><a href="PayPal.html#" class="btn btn-outline-dark link-scroll">Credit/Debit</a></h3>
+      <p class="text-left description"></p>
+          </div>
+      </div>
     <hr data-animate="fadeInUp">
     <div data-animate="fadeInUp" class="text-center">
       <p class="lead">Would you like to know more or just discuss something?</p>
@@ -85,54 +85,3 @@
     <script src="vendor/jquery.counterup/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
     <script src="js/front.js"></script>
-
-
-<!--paypal addition code-->
-<div id="smart-button-container">
-    <div style="text-align: center;">
-      <div id="paypal-button-container"></div>
-    </div>
-  </div>
-<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
-<script>
-  function initPayPalButton() {
-    paypal.Buttons({
-      style: {
-        shape: 'pill',
-        color: 'gold',
-        layout: 'vertical',
-        label: 'checkout',
-        
-      },
-
-      createOrder: function(data, actions) {
-        return actions.order.create({
-          purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
-        });
-      },
-
-      onApprove: function(data, actions) {
-        return actions.order.capture().then(function(orderData) {
-          
-          // Full available details
-          console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-
-          // Show a success message within this page, e.g.
-          const element = document.getElementById('paypal-button-container');
-          element.innerHTML = '';
-          element.innerHTML = '<h3>Thank you for your payment!</h3>';
-
-          // Or go to another URL:  actions.redirect('thank_you.html');
-          
-        });
-      },
-
-      onError: function(err) {
-        console.log(err);
-      }
-    }).render('#paypal-button-container');
-  }
-  initPayPalButton();
-</script>
-</body>
-</html>
