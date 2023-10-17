@@ -74,10 +74,10 @@
                   <input type="text" name="phone" placeholder="Phone" class="form-control">
                 </div>
                 <div class="col-md-6">
-                  <input type="text" name="Use" placeholder="Primary Use *" class="form-control">
+                  <input type="text" name="Use" placeholder="Primary Use *" required="required" class="form-control">
                 </div>
                 <div class="col-md-6">
-                  <input type="text" name="Budget" placeholder="Budget *" class="form-control">
+                  <input type="text" name="Budget" placeholder="Budget *" required="required" class="form-control">
                 </div>
                 <div class="col-md-6">
                   <Select name="platform" required>
@@ -112,7 +112,7 @@
                     <option value="AMD">AMD</option>
                   </Select>
                 </div>
-                <div class="col-md-6" required>
+                <div class="col-md-6">
                   <label>
                     <input type="checkbox" name="flexible" value="yes"> 
                     my budget is flexible.
@@ -127,10 +127,10 @@
              </label>
                 </div>
                 <div class="col-md-6">
-                  <textarea name="message" placeholder="Enter specific Graphics card if known" rows="2" required="required" class="form-control"></textarea>
+                  <textarea name="message" placeholder="Enter specific Graphics card if known" rows="2" required="Request" class="form-control"></textarea>
                 </div>
                 <div class="col-md-6">
-                  <textarea name="message" placeholder="Message" rows="2" required="required" class="form-control"></textarea>
+                  <textarea name="message" placeholder="Message" rows="2" required="requested" class="form-control"></textarea>
                 </div>
                 <div class="col-md-12 text-center">
                   <button type="submit" value="Send" class="btn btn-outline-primary">Send message</button>
