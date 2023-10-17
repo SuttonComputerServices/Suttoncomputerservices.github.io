@@ -50,24 +50,42 @@
       </header>
 
 <!-- Page Content -->
-<section id="Windows OS" data-animate="bounceIn" class="contact-section contact">
-<div class="container">
-    <header class="text-center">
-    <H1 data-animate="fadeInDown" class="title">Custom PC Builds</H1>
-    </header>
-    <div  class="row services text-center">
-        <div data-animate="fadeInUp" class="col-lg-4">
-    <h3 class="heading mb-3 text-400"></h3>
-    <p class="text-left description"></p>
+  <section id="contact" data-animate="bounceIn" class="contact-section contact">
+    <div class="container">
+      <header class="text-center">
+        <h2 class="title">Contact us</h2>
+      </header>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <form id="contact-form" method="POST" action="https://formspree.io/f/xjvpaero">
+            <div class="messages"></div>
+            <div class="controls">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" name="name" placeholder="firstname *" required="required" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="surname" placeholder="lastname *" required="required" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="email" placeholder="email *" required="required" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="phone" placeholder="phone" class="form-control">
+                </div>
+                <div class="col-md-12">
+                  <textarea name="message" placeholder="Message*" rows="4" required="required" class="form-control"></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <button type="submit" value="Send" class="btn btn-outline-primary">Send message</button>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
-        <div data-animate="fadeInUp" class="col-lg-4">
-    <h3 class="heading mb-3 text-400"></h3>
-    <p class="text-left description"></p>
-        </div>
-        <div data-animate="fadeInUp" class="col-lg-4">
-    <h3 class="heading mb-3 text-400"></h3>
-    <p class="text-left description"></p>
-        </div>
+      </div>
+    </div>
+  </section>
     </div>
     <hr data-animate="fadeInUp">
     <div data-animate="fadeInUp" class="text-center">
