@@ -112,7 +112,7 @@
                     <option value="AMD">AMD</option>
                   </Select>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" required>
                   <label>
                     <input type="checkbox" name="flexible" value="yes"> 
                     my budget is flexible.
@@ -126,9 +126,11 @@
                 my budget is not flexible.
              </label>
                 </div>
-                
-                <div class="col-md-12">
-                  <textarea name="message" placeholder="Message" rows="4" required="required" class="form-control"></textarea>
+                <div class="col-md-6">
+                  <textarea name="message" placeholder="Enter specific card if known" rows="2" required="required" class="form-control"></textarea>
+                </div>
+                <div class="col-md-6">
+                  <textarea name="message" placeholder="Message" rows="2" required="required" class="form-control"></textarea>
                 </div>
                 <div class="col-md-12 text-center">
                   <button type="submit" value="Send" class="btn btn-outline-primary">Send message</button>
