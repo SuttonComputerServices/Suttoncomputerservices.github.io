@@ -77,7 +77,10 @@
                   <input type="text" name="Use" placeholder="Primary Use *" class="form-control">
                 </div>
                 <div class="col-md-6">
-                  <input type="text" name="platform" placeholder="Intel or AMD *" class="form-control">
+                  <Select name="platform" required>
+                    <option value="Intel">Intel</option>
+                    <option value="AMD">AMD</option>
+                  </Select>
                 </div>
                 <div class="col-md-6">
                   <input type="text" name="Mem" placeholder="Memory Amount *" class="form-control">
@@ -87,6 +90,9 @@
                 </div>
                 <div class="col-md-6">
                   <input type="text" name="Flexibility" placeholder="How flexible is your budget? *" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="Warranty" placeholder="1 3 or 5 year warranty?*" class="form-control">
                 </div>
                 <div class="col-md-12">
                   <textarea name="message" placeholder="Message" rows="4" required="required" class="form-control"></textarea>
