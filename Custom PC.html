@@ -80,6 +80,25 @@
                   <input type="text" name="Budget" placeholder="Budget *" class="form-control">
                 </div>
                 <div class="col-md-6">
+                  <Select name="platform" required>
+                    <option value="AMD">AMD</option>
+                    <option value="Intel">Intel</option>
+                  </Select>
+                  <Select name="Memory Amount" required>
+                    <option value="16">16 GB</option>
+                    <option value="32">32 GB</option>
+                    <option value="48">48 GB</option>
+                    <option value="64">64 GB</option>
+                    <option value="128">128 GB</option>
+                  </Select>
+                  <Select name="Memory Amount" required>
+                    <option value="0">No warranty</option>
+                    <option value="1">1 year warranty</option>
+                    <option value="3">3 year warranty</option>
+                    <option value="5">5 year warranty</option>
+                  </Select>
+                </div>
+                <div class="col-md-6">
                   <label>
                     <input type="checkbox" name="flexible" value="yes"> 
                     my budget is flexible.
@@ -93,28 +112,7 @@
                 my budget is not flexible.
              </label>
                 </div>
-                <div class="col-md-6">
-                  <Select name="platform" required>
-                    <option value="AMD">AMD</option>
-                    <option value="Intel">Intel</option>
-                  </Select>
-                </div>
-                <div class="col-md-6">
-                  <Select name="Memory Amount" required>
-                    <option value="16">16 GB</option>
-                    <option value="32">32 GB</option>
-                    <option value="48">48 GB</option>
-                    <option value="64">64 GB</option>
-                    <option value="128">128 GB</option>
-                  </Select>
-                <div class="col-md-6">
-                  <Select name="Memory Amount" required>
-                    <option value="0">No warranty</option>
-                    <option value="1">1 year warranty</option>
-                    <option value="3">3 year warranty</option>
-                    <option value="5">5 year warranty</option>
-                  </Select>
-                </div>
+                
                 <div class="col-md-12">
                   <textarea name="message" placeholder="Message" rows="4" required="required" class="form-control"></textarea>
                 </div>
